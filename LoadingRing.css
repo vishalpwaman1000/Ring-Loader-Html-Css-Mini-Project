@@ -1,0 +1,36 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loader{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 20px solid lightgray;
+    border-radius: 50%;
+
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+
+    animation: Spinning .8s linear infinite;
+}
+
+@keyframes Spinning {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
